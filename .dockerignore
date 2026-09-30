@@ -1,0 +1,15 @@
+**/.git
+**/.vs
+**/bin
+**/obj
+**/.appdata
+**/.dotnet-home
+**/.nuget-packages
+.env
+.env.*
+appsettings.Development.json
+ca.pem
+*.user
+*.suo
+*.docx
+~$*

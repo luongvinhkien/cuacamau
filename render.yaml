@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: live-order-app
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ASPNETCORE_URLS
+        value: http://0.0.0.0:10000
+      - key: PORT
+        value: "10000"
+      - key: LIVEORDER_ADMIN_USER
+        value: admin
+      - key: LIVEORDER_ADMIN_PASSWORD
+        sync: false
+      - key: LIVEORDER_MYSQL
+        sync: false
